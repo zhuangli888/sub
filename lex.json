@@ -91,8 +91,7 @@
       "server_port": 38580,
       "uuid": "dade2bb9-99ad-4ada-93c6-db2c8af51b54",
       "password": "dade2bb9-99ad-4ada-93c6-db2c8af51b54",
-      "congestion_control": "bbr",
-      "alpn": ["h3"]
+      "congestion_control": "bbr"
     },
 
     {
