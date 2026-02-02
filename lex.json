@@ -1,6 +1,4 @@
 {
-  "version": 1,
-  "tag": "lex-subscription",
   "outbounds": [
     {
       "tag": "lex888-tuic",
