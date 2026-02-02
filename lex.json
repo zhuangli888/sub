@@ -67,23 +67,18 @@
       "outbounds": [
         "自动选择",
         "lex-tuic",
-        "lex-reality-vision",
         "lex-reality-grpc"
       ]
     },
-
     {
       "type": "urltest",
       "tag": "自动选择",
       "outbounds": [
         "lex-tuic",
-        "lex-reality-vision",
         "lex-reality-grpc"
       ]
     },
-
     { "type": "direct", "tag": "direct" },
-
     {
       "type": "tuic",
       "tag": "lex-tuic",
@@ -93,26 +88,6 @@
       "password": "dade2bb9-99ad-4ada-93c6-db2c8af51b54",
       "congestion_control": "bbr"
     },
-
-    {
-      "type": "vless",
-      "tag": "lex-reality-vision",
-      "server": "38.55.198.125",
-      "server_port": 25752,
-      "uuid": "dade2bb9-99ad-4ada-93c6-db2c8af51b54",
-      "flow": "xtls-rprx-vision",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bible.com",
-        "reality": {
-          "enabled": true,
-          "public_key": "hsrsH2j3GQzBaOzYs75SCsuoFuof0Iyfv0V-Y0MTjk4",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      }
-    },
-
     {
       "type": "vless",
       "tag": "lex-reality-grpc",
