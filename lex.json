@@ -16,6 +16,7 @@
     "strategy": "ipv4_only",
     "disable_cache": false
   },
+
   "experimental": {
     "cache_file": { "enabled": true },
     "clash_api": {
@@ -24,6 +25,7 @@
       "secret": ""
     }
   },
+
   "inbounds": [
     {
       "auto_route": true,
@@ -57,6 +59,7 @@
       "users": []
     }
   ],
+
   "outbounds": [
     {
       "type": "selector",
@@ -68,6 +71,7 @@
         "lex-reality-grpc"
       ]
     },
+
     {
       "type": "urltest",
       "tag": "自动选择",
@@ -77,7 +81,9 @@
         "lex-reality-grpc"
       ]
     },
+
     { "type": "direct", "tag": "direct" },
+
     {
       "type": "tuic",
       "tag": "lex-tuic",
@@ -87,6 +93,7 @@
       "password": "dade2bb9-99ad-4ada-93c6-db2c8af51b54",
       "congestion_control": "bbr"
     },
+
     {
       "type": "vless",
       "tag": "lex-reality-vision",
@@ -102,10 +109,10 @@
           "enabled": true,
           "public_key": "hsrsH2j3GQzBaOzYs75SCsuoFuof0Iyfv0V-Y0MTjk4",
           "short_id": "6ba85179e30d4fc2"
-        },
-        "utls": { "enabled": true, "fingerprint": "chrome" }
+        }
       }
     },
+
     {
       "type": "vless",
       "tag": "lex-reality-grpc",
@@ -119,8 +126,7 @@
           "enabled": true,
           "public_key": "hsrsH2j3GQzBaOzYs75SCsuoFuof0Iyfv0V-Y0MTjk4",
           "short_id": "6ba85179e30d4fc2"
-        },
-        "utls": { "enabled": true, "fingerprint": "chrome" }
+        }
       },
       "transport": {
         "type": "grpc",
@@ -128,6 +134,7 @@
       }
     }
   ],
+
   "route": {
     "auto_detect_interface": true,
     "rules": [
