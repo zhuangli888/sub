@@ -94,6 +94,7 @@
       "server_port": 25752,
       "uuid": "dade2bb9-99ad-4ada-93c6-db2c8af51b54",
       "flow": "xtls-rprx-vision",
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
         "server_name": "www.bible.com",
