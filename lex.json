@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "tag": "lex-subscription",
+  "outbounds": [
+    {
+      "tag": "lex888-tuic",
+      "type": "tuic",
+      "server": "lex888.dpdns.org",
+      "server_port": 38580,
+      "uuid": "dade2bb9-99ad-4ada-93c6-db2c8af51b54",
+      "password": "dade2bb9-99ad-4ada-93c6-db2c8af51b54",
+      "congestion_control": "bbr",
+      "tls": {
+        "enabled": true,
+        "server_name": "lex888.dpdns.org",
+        "alpn": ["h3"]
+      }
+    },
+    {
+      "tag": "lex888-reality-vision",
+      "type": "vless",
+      "server": "38.55.198.125",
+      "server_port": 25752,
+      "uuid": "dade2bb9-99ad-4ada-93c6-db2c8af51b54",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bible.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hsrsH2j3GQzBaOzYs75SCsuoFuof0Iyfv0V-Y0MTjk4",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "lex888-reality-grpc",
+      "type": "vless",
+      "server": "38.55.198.125",
+      "server_port": 39523,
+      "uuid": "dade2bb9-99ad-4ada-93c6-db2c8af51b54",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bible.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hsrsH2j3GQzBaOzYs75SCsuoFuof0Iyfv0V-Y0MTjk4",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    }
+  ]
+}
